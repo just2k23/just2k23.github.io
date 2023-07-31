@@ -82,7 +82,7 @@ header {
 nav a {
     font-weight: 600;
     padding: right 1mm;
-    display: flex;
+    display: flexbox;
     border-right: 3px solid;
     width: 12ch;
 }
