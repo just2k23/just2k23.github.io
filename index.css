@@ -51,17 +51,6 @@ header {
     padding: 10px;
 }
 
-#nombre-logo {
-    display: block;
-    white-space: nowrap;
-    border-right: 4px solid;
-    width: 17ch;
-    animation: typing 1.3s steps(17),
-    blink .5s infinite step-start alternate;
-    overflow: hidden;
-    color: #04534f;
-}
-
 .nav-link {
     display: block;
     white-space: nowrap;
@@ -93,7 +82,7 @@ header {
 nav a {
     font-weight: 600;
     padding: right 1mm;
-    display: flexbox;
+    display: flex;
     border-right: 3px solid;
     width: 12ch;
 }
@@ -110,6 +99,41 @@ nav a:hover {
         padding: 10px 0px;
     }
 }
+
+@media screen and (max-width:767px) {
+     
+        /* Puedes modificar los estilos según tus necesidades */
+      
+        /* Por ejemplo, para el elemento header */
+        header {
+          flex-direction: column; /* Cambiar la dirección de flexión a vertical */
+        }
+      
+        /* Para el elemento nav */
+        nav {
+          padding: 10px 0; /* Reducir el padding vertical */
+        }
+      
+        /* Para el elemento .nav-link */
+        .nav-link {
+          width: auto; /* Permitir que el ancho sea dinámico según el contenido */
+          border: none; /* Eliminar el borde */
+          animation: none; /* Detener la animación */
+          color: #04534f; /* Cambiar el color de texto */
+        }
+      
+        /* Para el elemento nav a */
+        nav a {
+          display: block; /* Cambiar a bloque para que los enlaces aparezcan uno debajo del otro */
+          border: none; /* Eliminar el borde */
+          width: auto; /* Permitir que el ancho sea dinámico según el contenido */
+        }
+      
+        /* Para los enlaces nav a:hover */
+        nav a:hover {
+          color: white; /* Cambiar el color de texto en el estado hover */
+        }
+      }
 
 #texto-animado {
     display: block;
