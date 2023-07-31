@@ -100,40 +100,43 @@ nav a:hover {
     }
 }
 
-@media screen and (max-width:767px) {
-     
-        /* Puedes modificar los estilos según tus necesidades */
-      
-        /* Por ejemplo, para el elemento header */
-        header {
-          flex-direction: column; /* Cambiar la dirección de flexión a vertical */
-        }
-      
-        /* Para el elemento nav */
-        nav {
-          padding: 10px 0; /* Reducir el padding vertical */
-        }
-      
-        /* Para el elemento .nav-link */
-        .nav-link {
-          width: auto; /* Permitir que el ancho sea dinámico según el contenido */
-          border: none; /* Eliminar el borde */
-          animation: none; /* Detener la animación */
-          color: #04534f; /* Cambiar el color de texto */
-        }
-      
-        /* Para el elemento nav a */
-        nav a {
-          display: block; /* Cambiar a bloque para que los enlaces aparezcan uno debajo del otro */
-          border: none; /* Eliminar el borde */
-          width: auto; /* Permitir que el ancho sea dinámico según el contenido */
-        }
-      
-        /* Para los enlaces nav a:hover */
-        nav a:hover {
-          color: white; /* Cambiar el color de texto en el estado hover */
-        }
-      }
+/* Estilos para dispositivos con un ancho máximo de 767 píxeles */
+@media screen and (max-width: 767px) {
+
+    /* Por ejemplo, para el elemento header */
+    header {
+        flex-direction: column; /* Cambiar la dirección de flexión a vertical */
+        background-color: #333; /* Cambiar el color de fondo */
+        padding: 20px; /* Cambiar el espaciado */
+    }
+
+    /* Para el elemento nav */
+    nav {
+        padding: 10px 0; /* Reducir el padding vertical */
+    }
+
+    /* Para el elemento .nav-link */
+    .nav-link {
+        width: auto; /* Permitir que el ancho sea dinámico según el contenido */
+        border: none; /* Eliminar el borde */
+        animation: none; /* Detener la animación */
+        color: #fff; /* Cambiar el color de texto */
+    }
+
+    /* Para el elemento nav a */
+    nav a {
+        display: block; /* Cambiar a bloque para que los enlaces aparezcan uno debajo del otro */
+        border: none; /* Eliminar el borde */
+        width: auto; /* Permitir que el ancho sea dinámico según el contenido */
+        padding: 5px; /* Cambiar el espaciado */
+    }
+
+    /* Para los enlaces nav a:hover */
+    nav a:hover {
+        color: black; /* Cambiar el color de texto en el estado hover */
+    }
+}
+
 
 #texto-animado {
     display: block;
