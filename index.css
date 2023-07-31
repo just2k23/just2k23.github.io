@@ -92,7 +92,7 @@ nav a:hover {
 }
 
 /* Estilos para dispositivos con un ancho máximo de 767 píxeles */
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
 
     /* Por ejemplo, para el elemento header */
     header {
