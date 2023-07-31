@@ -1,0 +1,125 @@
+* {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.articulo-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.articulo-1 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0,0.2);
+}
+
+.articulo-1 img {
+    width: 100%;
+    height: auto;
+    display: flex;    
+}
+
+.art-content {
+    padding: 10px;
+}
+
+h3, p{
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    width: max-content;
+}
+
+header {
+    display: flex;
+    min-width: 70px;
+    background-color: #000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#nombre-logo {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 17ch;
+    animation: typing 1.3s steps(17),
+    blink .5s infinite step-start alternate;
+    overflow: hidden;
+    color: #04534f;
+}
+
+.nav-link {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch;
+    animation: typing 1.3s steps(17),
+    blink .5s infinite step-start alternate;
+    overflow: hidden;
+    color: #04534f;
+}
+/*codigo de animacion*/
+@keyframes typing {
+    from { width: 0; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.logokiwi {
+    display: flex;
+}
+
+.logokiwi img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding: right 1mm;
+    display: flexbox;
+    border-right: 3px solid;
+    width: 12ch;
+}
+
+nav a:hover {
+    color: white;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+#texto-animado {
+    display: block;
+    content: '|';
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 17ch;
+    animation: typing 1.3s steps(17),
+    blink .5s infinite step-start alternate;
+    overflow: hidden;
+    color: #043e3a;
+}
+
